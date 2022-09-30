@@ -1,15 +1,15 @@
 # Crypto-Price-Movement-Prediction
 ## About the Project
-Using various Price Prediction Models popular for trading such as Decision Trees, Random Forests and Gradient Boost Classifiers for predicting short term price movement of Cryptocurrency markets. Both classification and regression based models have been used to test the comparative efficacy of the same. The Final Step of the project will be deployment of the above model for proper backtesting and paper-testing on quantconnect to testthe existence of any alpha.
+Using several price prediction models, including as Gradient Boost Classifiers, Random Forests, and Decision Trees, which are used in trading, to forecast short-term price movement of cryptocurrency markets The relative effectiveness of the same has been tested using both classification-based and regression-based models. The implementation of the aforementioned model for appropriate backtesting and paper-testing on QuantConnect to verify the presence of any alpha will be the project's last step.
 
 ## Data and Feature Engineering
-The current version of the project only uses data on BTC(Bitcoin), but will be extended to other Cryptocurrency markets as well to develop a more robust strategy. The initial OHCL data has been augmented using a variety of Popular Technical Indicators. This data set will be further augmented with Blockchain related data (data for the number of bitcoin transactions and growth of the mempool (i.e., storage of not-yet validated bitcoin transactions) etc.) as well as sentimental data from Twitter. Another idea to be tested is to directly include the data and indicators for the the past K days into the feature set of every day to better utilise the temporal relation of the Market Prices.
+The project will be expanded to include data from other cryptocurrency marketplaces in addition to BTC (Bitcoin) in order to create a more effective approach. A number of Popular Technical Indicators have been used to supplement the primary OHCL data. This data set will also be supplemented with emotive data from Twitter and Blockchain-related data, such as information on the volume of Bitcoin transactions and the expansion of the mempool (i.e., storage of unconfirmed Bitcoin transactions). To better use the temporal relationship of the Market Prices, another proposal that will be investigated is to directly add the data and indications for the previous K days into the feature set of every day.
 
 ## The Model
-The planned models to be used our Random Forests and Gradient Boost Classifiers( AdaBoost, XGBoost etc.). The current version only has the Random Forest models implemented. The hyperparameters for the model have also been tuned using sklearn's GridSearchCV.
+Gradient Boost Classifiers and Random Forests are the intended models to be employed ( AdaBoost, XGBoost etc.). Only the Random Forest models are used in the present edition. Additionally, the model's hyperparameters have been adjusted using sklearn's GridSearchCV.
 
 ## Performance
-The currently implemented Random Forest Model achieves an accuracy of 56% over the test data, however the existence of an edge still needs to be tested taking into account the transaction fees involved for the trades being made. Proper backtesting and paper-trading over on QuantConnect will provide a better idea of the performance of the model.
+The currently used Random Forest Model obtains a 56% accuracy over the test data, but it is still necessary to verify whether there is an advantage when taking into consideration the transaction costs associated with the trades being performed. An accurate backtesting and paper trading on QuantConnect will give a better picture of the model's performance.
 
 ## Current Targets
 1. Testing the efficacy of more models over the current data to find the best model for the asset.
